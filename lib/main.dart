@@ -13,7 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
-      home: const NotesView(),
+      home: Scaffold(
+        floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add),),
+        body:const NotesView(),
+      ),
     );
   }
 }
